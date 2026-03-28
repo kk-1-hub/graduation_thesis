@@ -11,17 +11,17 @@
 
 \whusetup{
   info = {
-    title      = {融合大模型主动感知与异构 Agent 协同的交通资产检测与识别}, % 标题，可使用 \\ 手动换行
-    title*     = {Research on Traffic Asset Detection and Recognition via Active Perception with Large Models and Heterogeneous Agent Collaboration},
+    title      = {面向交通资产清查的主动感知检测与知识引导属性识别研究}, % 标题，可使用 \\ 手动换行
+    title*     = {Research on Active-Perception Detection and Knowledge-Guided Attribute Recognition for Traffic Asset Inventory},
     department  = {测绘遥感信息工程全国重点实验室},
     department* = {State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing},
     author     = {冯旭宇},
     author*    = {xuyu feng},
     student-id = {2024286190132},
-    supervisor  = {李明},
-    supervisor* = {li ming},
-    academic-title  = {副教授},
-    academic-title* = {Prof},
+    supervisor  = {李明 副教授，董震 教授},
+    supervisor* = {li ming, dong zhen},
+    academic-title  = {},
+    academic-title* = {Prof, Prof},
     % supervisor-outer = {王某某}, % 校外导师（非必填）
     % academic-title-outer = {高级工程师}, % 校外导师职称（非必填）
     subject = {测绘}, % 学科名称（非必填）
@@ -33,8 +33,8 @@
     month = 5,
     % clc = , % 分类号
     % udc = ,
-    keywords  = {\LaTeX{}, 毕业论文, 模版, 武汉大学}, % 中文关键词
-    keywords* = {\LaTeX{}, Thesis, Template, Wuhan~University}, % 英文关键词
+    keywords  = {交通资产清查; 主动感知; 目标检测; 属性识别; 长尾数据增强}, % 中文关键词
+    keywords* = {traffic asset inventory; active perception; object detection; attribute recognition; long-tail data augmentation}, % 英文关键词
   },
   style = {
     % 字体相关选项
@@ -50,7 +50,7 @@
     % 页面相关选项
     % chapter-page-header = true, % 章节首页是否有页眉
     % bachelor-encover = true, % 本科毕业论文英文封面
-    % library, % 图书馆模式（去掉论文中所有的空白页）
+    library, % 图书馆模式（去掉论文中所有的空白页）
     % license, % 使用授权协议书
     % fullwidth-stop = true, % 句号样式
     % footnote-style = <>, % 脚注编号样式
@@ -61,6 +61,8 @@
 \whumodule{algorithm2e}
 % chapter1 uses \multirow in tables
 \usepackage{multirow}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,positioning}
 \begin{document}
 % \raggedbottom % 使得空白都置于每一页底部，可参考 https://github.com/whutug/whu-thesis/issues/276
 
@@ -77,6 +79,10 @@
 \mainmatter
 
 \include{pages/chapter1.tex}
+\include{pages/chapter2.tex}
+\include{pages/chapter3.tex}
+\include{pages/chapter4.tex}
+\include{pages/chapter5.tex}
 % 当然你也可以直接在这里写，不过这样不太方便管理
 
 
@@ -93,8 +99,8 @@
 \end{acknowledgements}
 
 % 附录
-\appendix
+% \appendix
 
-\include{pages/appendix.tex}
+% \include{pages/appendix.tex}
 
 \end{document}
